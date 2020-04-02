@@ -1,0 +1,556 @@
+ul li {
+    list-style: none;
+}
+
+/* ------------- 背景图片 ---------------- */
+
+.background-img {
+    background: url(../img/intro-bg.jpg) center no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ------------- 首页字体设置 ---------------- */
+
+.content {
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.content h3 {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.content h3 {
+    color: white;
+}
+
+.content h3 span {
+    color: #F4D03F;
+}
+
+@media screen and (max-width:70em) {
+    .content h3 {
+        font-size: 3em;
+    }
+    .content p {
+        letter-spacing: 1px;
+    }
+}
+
+.scroll-bottom {
+    margin-top: 5em;
+}
+
+.scroll-bottom-border {
+    border: 2px solid rgb(192, 188, 188);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.scroll-bottom-border img {
+    width: 30px;
+    height: 30px;
+    /* 垂直居中 */
+    position: relative;
+    top: 30%;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background: rgba(146, 146, 146, 0.5);
+    }
+    25% {
+        background: rgba(184, 184, 184, 0.5);
+    }
+    50% {
+        background: rgba(190, 190, 190, 0.5);
+    }
+    75% {
+        background: rgba(219, 219, 219, 0.5);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.scroll-bottom-border:hover img {
+    animation: zoom 2s linear infinite;
+}
+
+.scroll-bottom-border:hover {
+    animation: colorchange 2s;
+}
+
+/* ----------------基本资料----------------------------------------------------------- */
+
+.Basic-information {
+    background: linear-gradient(to bottom, #6E7174, #31353A);
+    padding: 5em 0;
+}
+
+.Basic-information .title {
+    text-align: center;
+}
+
+.title h4 {
+    color: #DDDDDD;
+    font-size: 2.1em;
+    margin-bottom: 0.7em;
+}
+
+.title span {
+    font-weight: bold;
+}
+
+.title hr {
+    width: 70px;
+    height: 4px;
+    background-color: #F4D03F;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ */
+
+.base-detail li {
+    /* border: 1px solid rgb(49, 13, 13); */
+    text-align: center;
+    padding: 1em 0;
+    color: #AAAAAA;
+    list-style: none;
+}
+
+.information-detail {
+    width: 70%;
+    overflow: hidden;
+}
+
+.information-detail ul li p:nth-of-type(1) {
+    margin-top: 1em;
+    color: #F4D03F;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.detail-icon .fa {
+    font-size: 4em;
+    color: #AAAAAA;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detail-icon {
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    background: #474B4F;
+    margin: 0 auto;
+}
+
+/* ------------------------项目经验-------------------------------------- */
+
+/* .project-detail div{
+    border: 1px solid red;
+} */
+
+.project-Experience {
+    padding: 5em 0;
+    background: linear-gradient(to bottom, #FEFEFE, #CCCCCC);
+}
+
+.project-Experience .title {
+    text-align: center;
+}
+
+.project-Experience .title h4 {
+    color: #474B4F;
+}
+
+.project-Experience .title p {
+    margin-top: 2em;
+}
+
+.test {
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.detail-menu {
+    text-align: center;
+}
+
+.detail-menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.detail-menu li a {
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.actives {
+    color: rgb(99, 98, 98);
+    font-size: 12px;
+    background-color: #F4D03F;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ------------------------------------ */
+
+.project-detail {
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+
+.border-within {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    margin: 0 auto;
+}
+
+.border-within img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.border-within p:nth-of-type(1) {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.border-within p:nth-of-type(2) {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.border-within p:nth-of-type(3) {
+    position: absolute;
+    color: yellow;
+    font-size: 15px;
+}
+
+.border-within:hover .content-p1 {
+    transform: translateY(-50px) scale(1.2);
+    transition: 0.4s ease-in;
+    font-size: 20px;
+}
+
+.border-within:hover .content-p2 {
+    transform: scale(1.2);
+    transition: 0.4s ease-in;
+    font-size: 8px;
+}
+
+.border-within:hover .content-p3 {
+    transform: translateY(40px) scale(1.2);
+    transition: 0.4s ease-in;
+    font-size: 20px;
+}
+
+.border-within:hover .project-content {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.border-within:hover img {
+    transform: scale(1.2);
+}
+
+.border-within:hover {
+    transform: scale(1.1);
+}
+
+.project-content {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+}
+
+.border-outside {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+}
+
+/* ---------------专业技能------------------ */
+
+.professional-skill {
+    background: linear-gradient(to bottom, #F4D03F, #C3A632);
+    padding: 5em 0;
+}
+
+.professional-skill .title {
+    text-align: center;
+}
+
+.professional-skill .title h4 {
+    color: #474B4F;
+}
+
+.content-right {
+    margin-left: 20px;
+}
+
+.content-right li {
+    list-style: none;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.content-right li p {
+    margin-left: 30px;
+}
+
+.content-right li .fa {
+    color: white;
+    font-size: 20px;
+}
+
+/* -----------------------工作经历------------------------------ */
+
+.work-amount {
+    padding: 5em 0;
+    background: linear-gradient(to bottom, #6E7174, #31353A);
+}
+
+.amount-type ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.amount-type .fa {
+    font-size: 50px;
+    color: #F4D03F;
+}
+
+.amount-type ul li div {
+    padding: 10px 0;
+}
+
+.amount-type ul li div span {
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+.amount-type ul li p {
+    color: rgb(170, 162, 162);
+}
+
+/* --------------------人生经历-------------------------------------- */
+
+.life-exprience {
+    padding: 6em 0;
+    background: linear-gradient(to bottom, #FEFEFE, #CCCCCC);
+}
+
+.life-exprience .title h4 {
+    color: #474B4F;
+}
+
+.life-exprience .title p {
+    color: #474B4F;
+    margin-top: 25px;
+}
+
+.exprience-content ul li {
+    display: inline-block;
+}
+
+.exprience-content {
+    padding: 20px 0;
+}
+
+.content-img img {
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 3%;
+}
+
+.content-img {
+    height: 127px;
+    width: 127px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.content-img:hover {
+    background: #F4D03F;
+}
+
+.text-content li p:nth-of-type(1) {
+    margin-top: 20px;
+    color: rgb(99, 94, 94);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-content li p {
+    color: rgb(119, 114, 114);
+}
+
+/* ---------自我评价----------------------------------------------------------- */
+
+.self-evaluation {
+    padding: 6em 0;
+    background: url(../img/testimonial-bg.jpg) center;
+    background-attachment: fixed;
+}
+
+.self-evaluation .title h4 {
+    color: #DDDDDD;
+}
+
+.owlpaly {
+    overflow: hidden;
+}
+
+.owl-theme h4 {
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:40em) {
+    .owlpaly .item h4 {
+        font-size: 14px;
+    }
+}
+
+/* -------联系方式------------------------------------------- */
+
+.contact-way {
+    padding: 6em 0;
+    background: linear-gradient(to bottom, #FEFEFE, #CCCCCC);
+}
+
+.contact-way .title h4 {
+    color: #474B4F;
+}
+
+.contact-content {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.contact-content ul li {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.contact-content ul {
+    width: 70%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.contact-content .fa {
+    color: #F4D03F;
+    font-size: 2em;
+}
+
+.contact-content ul li p {
+    margin-top: 15px;
+}
+
+.content-form form {
+    /* border: 1px solid red; */
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.content-input input {
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-indent: 5px;
+}
+
+.content-form textarea {
+    width: 100%;
+    line-height: 10px;
+    padding: 10px 5px;
+}
+
+.content-form p {
+    font-size: 1.5em;
+    color: #474B4F;
+    margin-top: 30px;
+}
+
+.content-form form button {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 3em 0;
+    background: #222222;
+}
+
+footer p {
+    color: #337AB7;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+footer ul li a .fa {
+    font-size: 20px;
+}

@@ -1,0 +1,11 @@
+.detail-icon {
+    transition: 0.5s linear;
+}
+
+.base-detail li:hover .detail-icon {
+    transform: scale(1.1);
+}
+
+.base-detail li:hover .fa {
+    color: #F4D03F;
+}
